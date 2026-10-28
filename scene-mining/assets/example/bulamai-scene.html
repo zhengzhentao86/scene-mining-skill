@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>S3 调试 · 不莱玫大容量行李箱</title>
+<style>
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#faf8f5;color:#2b2b2b;line-height:1.7;padding:28px 16px 48px;}
+  .wrap{max-width:1000px;margin:0 auto;}
+  .hero{background:linear-gradient(135deg,#2a5a8c 0%,#3f7ab5 55%,#5a96cc 100%);color:#fff;border-radius:16px;padding:22px 26px;position:relative;overflow:hidden;}
+  .hero::after{content:"";position:absolute;right:-60px;top:-60px;width:240px;height:240px;border-radius:50%;background:rgba(255,255,255,.06);}
+  .hero .brand{font-size:12.5px;letter-spacing:2px;opacity:.85;font-weight:600;}
+  .hero h1{font-size:22px;margin:5px 0 2px;font-weight:700;}
+  .hero .sub{font-size:13px;opacity:.92;}
+  .hero .chips{display:flex;flex-wrap:wrap;gap:7px;margin-top:10px;}
+  .hero .chip{background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.25);border-radius:999px;padding:3px 10px;font-size:12px;}
+  .imgs{display:flex;gap:10px;margin-top:12px;}
+  .imgs img{flex:1;min-width:0;border-radius:9px;max-height:170px;object-fit:cover;}
+  .input{margin-top:12px;background:#f4f0ea;border-radius:10px;padding:10px 14px;font-size:12.5px;color:#5a5148;line-height:1.7;}
+  .input b{color:#3d332b;}
+  .sec-title{font-size:16px;font-weight:700;margin:22px 0 10px;color:#3d332b;}
+  .scard{background:#fff;border:1px solid #ece7e0;border-radius:12px;padding:13px 16px;margin-bottom:10px;box-shadow:0 2px 6px rgba(90,70,50,.04);}
+  .shead{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:6px;}
+  .sname{font-size:15px;font-weight:800;color:#3d332b;}
+  .prio{font-size:11.5px;font-weight:800;border-radius:6px;padding:2px 9px;color:#fff;}
+  .p-main{background:#c25e3c;} .p-test{background:#2f6bd6;}
+  .rowline{font-size:12.5px;color:#4a453f;margin:4px 0;line-height:1.6;}
+  .rowline b{color:#3d332b;}
+  .rowline .lb{display:inline-block;min-width:3.6em;color:#8a8178;font-weight:700;font-size:12px;}
+  .shoot{font-size:12.5px;background:#f7f3ec;border-radius:8px;padding:6px 10px;color:#5a5148;margin:5px 0;line-height:1.6;}
+  .shoot .hk{color:#c25e3c;font-weight:700;}
+  .verified{font-size:11.5px;color:#8a8178;background:#f4f7fb;border-radius:6px;padding:2px 8px;display:inline-block;margin-top:3px;}
+  .verified b{color:#1f7a4d;}
+  .foot{font-size:11.5px;color:#a29a90;margin-top:20px;padding-top:10px;border-top:1px solid #e5dfd6;}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="hero">
+    <div class="brand">不莱玫官方旗舰店</div>
+    <h1>大容量行李箱 Max（海盐蓝系列）</h1>
+    <div class="sub">S3 挖掘场景 · 独立调试产物 · 品类：箱包出行</div>
+    <div class="chips">
+      <span class="chip">同样尺寸，就是更能装</span>
+      <span class="chip">王俊凯同款（品牌首位代言人）</span>
+      <span class="chip">内置 CHEECASE 收纳分区</span>
+      <span class="chip">买2赠14</span>
+    </div>
+    <div class="imgs">
+      <img src="./bulemei-main.jpg" alt="不莱玫行李箱王俊凯海报">
+    </div>
+  </div>
+
+  <div class="input"><b>S3 输入（简版）：</b>主攻人群 = 出差党 × 旅行党 × 收纳整理党；主攻买点 = 同样尺寸更能装（大容量+收纳系统）· 王俊凯同款（信任）· 内置分区收纳。以下场景全部来自内容侧先探 + 四问填充。</div>
+
+  <div class="sec-title">场景需求卡 · 主攻 3 / 可测试 1</div>
+
+  <div class="scard">
+    <div class="shead"><span class="sname">SC-01 出差装箱 · 同样 20 寸装得更多</span><span class="prio p-main">主攻</span></div>
+    <div class="rowline"><span class="lb">触发</span>出差前一晚收拾行李，担心箱子装不下。</div>
+    <div class="rowline"><span class="lb">画面</span>桌上堆满衣服/设备/洗漱包，主角逐个塞进 20 寸箱，同款 20 寸对比箱放旁边：别人装一半就满，不莱玫装完还有空位。</div>
+    <div class="rowline"><span class="lb">痛点</span>看着大的箱子实际装不了多少、装完拉链爆开。</div>
+    <div class="shoot"><b>拍法：</b>开盖逐层装箱 + 双箱对比。<b>口播：</b><span class="hk">"同样 20 寸，凭什么它能装更多？"</span></div>
+    <span class="verified"><b>✓ 已验证</b> 打工人出差好物 1.4k 赞；"同样尺寸更能装"是本品核心命题</span>
+  </div>
+
+  <div class="scard">
+    <div class="shead"><span class="sname">SC-02 双人旅行收纳 · 空间翻倍</span><span class="prio p-main">主攻</span></div>
+    <div class="rowline"><span class="lb">触发</span>双人 5 日游/家庭出行收拾行李。</div>
+    <div class="rowline"><span class="lb">画面</span>两人行李摊开（厚衣服+鞋+化妆品），配合内置收纳袋分区码放，5 日行李一个箱子装下。</div>
+    <div class="rowline"><span class="lb">痛点</span>行李装不下、箱子不够用。</div>
+    <div class="shoot"><b>拍法：</b>沉浸式收拾行李（爆款形式）+ 收纳分区特写。<b>口播：</b><span class="hk">"收纳空间翻倍，旅行箱就得这么装"</span></div>
+    <span class="verified"><b>✓ 已验证</b> "行李箱收纳空间翻倍"84.9 万赞超爆款模板；沉浸式收拾行李 561 赞</span>
+  </div>
+
+  <div class="scard">
+    <div class="shead"><span class="sname">SC-03 王俊凯同款 · 开箱仪式</span><span class="prio p-main">主攻</span></div>
+    <div class="rowline"><span class="lb">触发</span>新箱到货、明星同款种草后下单。</div>
+    <div class="rowline"><span class="lb">画面</span>开箱海盐蓝配色+收纳包逐件展示，结尾"王俊凯同款系列"落版。</div>
+    <div class="rowline"><span class="lb">痛点</span>怕买错、选择困难。</div>
+    <div class="shoot"><b>拍法：</b>开箱 Vlog。<b>口播：</b><span class="hk">"王俊凯同款行李箱，颜值能打又能装"</span></div>
+    <span class="verified"><b>✓ 已验证</b> 开箱内容 4.2k 赞；代言人话题自带流量</span>
+  </div>
+
+  <div class="scard">
+    <div class="shead"><span class="sname">SC-04 极简出行 · 一箱 6 天</span><span class="prio p-test">可测试</span></div>
+    <div class="rowline"><span class="lb">触发</span>短途差旅想轻装。</div>
+    <div class="rowline"><span class="lb">画面</span>一个 20 寸箱+斜挎包搞定出差 6 天，电脑/iPad 各归其位。</div>
+    <div class="rowline"><span class="lb">痛点</span>行李多、拖箱麻烦。</div>
+    <div class="shoot"><b>拍法：</b>极简打包全过程。<b>口播：</b><span class="hk">"极简出行，一个箱子就是全部行李"</span></div>
+    <span class="verified"><b>✓ 已验证</b> 极简出行一箱 6 天 518 赞</span>
+  </div>
+
+  <div class="foot">S3 调试产物 · 输入为简版买点/人群 · 内容侧证据检索于 2026-10-28（行李箱收纳/开箱/出差品类）</div>
+</div>
+</body>
+</html>

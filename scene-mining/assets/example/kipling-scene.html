@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>S3 调试 · Kipling 双肩包</title>
+<style>
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#faf8f5;color:#2b2b2b;line-height:1.7;padding:28px 16px 48px;}
+  .wrap{max-width:1000px;margin:0 auto;}
+  .hero{background:linear-gradient(135deg,#3f3a4e 0%,#5b5468 55%,#7a7287 100%);color:#fff;border-radius:16px;padding:22px 26px;position:relative;overflow:hidden;}
+  .hero::after{content:"";position:absolute;right:-60px;top:-60px;width:240px;height:240px;border-radius:50%;background:rgba(255,255,255,.06);}
+  .hero .brand{font-size:12.5px;letter-spacing:2px;opacity:.85;font-weight:600;}
+  .hero h1{font-size:22px;margin:5px 0 2px;font-weight:700;}
+  .hero .sub{font-size:13px;opacity:.92;}
+  .hero .chips{display:flex;flex-wrap:wrap;gap:7px;margin-top:10px;}
+  .hero .chip{background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.25);border-radius:999px;padding:3px 10px;font-size:12px;}
+  .imgs{display:flex;gap:10px;margin-top:12px;}
+  .imgs img{flex:1;min-width:0;border-radius:9px;max-height:170px;object-fit:cover;}
+  .input{margin-top:12px;background:#f4f0ea;border-radius:10px;padding:10px 14px;font-size:12.5px;color:#5a5148;line-height:1.7;}
+  .input b{color:#3d332b;}
+  .sec-title{font-size:16px;font-weight:700;margin:22px 0 10px;color:#3d332b;}
+  .scard{background:#fff;border:1px solid #ece7e0;border-radius:12px;padding:13px 16px;margin-bottom:10px;box-shadow:0 2px 6px rgba(90,70,50,.04);}
+  .shead{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:6px;}
+  .sname{font-size:15px;font-weight:800;color:#3d332b;}
+  .prio{font-size:11.5px;font-weight:800;border-radius:6px;padding:2px 9px;color:#fff;}
+  .p-main{background:#c25e3c;} .p-test{background:#2f6bd6;}
+  .rowline{font-size:12.5px;color:#4a453f;margin:4px 0;line-height:1.6;}
+  .rowline b{color:#3d332b;}
+  .rowline .lb{display:inline-block;min-width:3.6em;color:#8a8178;font-weight:700;font-size:12px;}
+  .shoot{font-size:12.5px;background:#f7f3ec;border-radius:8px;padding:6px 10px;color:#5a5148;margin:5px 0;line-height:1.6;}
+  .shoot .hk{color:#c25e3c;font-weight:700;}
+  .verified{font-size:11.5px;color:#8a8178;background:#f4f7fb;border-radius:6px;padding:2px 8px;display:inline-block;margin-top:3px;}
+  .verified b{color:#1f7a4d;}
+  .foot{font-size:11.5px;color:#a29a90;margin-top:20px;padding-top:10px;border-top:1px solid #e5dfd6;}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="hero">
+    <div class="brand">KIPLING 凯浦林 · 官方旗舰店</div>
+    <h1>经典双肩背包（浅米/浅灰）</h1>
+    <div class="sub">S3 挖掘场景 · 独立调试产物 · 品类：箱包</div>
+    <div class="chips">
+      <span class="chip">轻得像云朵（用户原话）</span>
+      <span class="chip">巨能装 + 分区收纳</span>
+      <span class="chip">毛绒猴子挂件 · 辨识度</span>
+      <span class="chip">耐磨防泼水</span>
+      <span class="chip">宽肩带不勒肩</span>
+    </div>
+    <div class="imgs">
+      <img src="./kipling-front.jpg" alt="Kipling 双肩包正面图">
+      <img src="./kipling-wear.jpg" alt="Kipling 双肩包上身图">
+    </div>
+  </div>
+
+  <div class="input"><b>S3 输入（简版）：</b>主攻人群 = 通勤上班族（背电脑）× 学生党；主攻买点 = 轻 · 能装分区 · 一包多场合。以下场景全部来自内容侧先探 + 四问填充。</div>
+
+  <div class="sec-title">场景需求卡 · 主攻 2 / 可测试 2</div>
+
+  <div class="scard">
+    <div class="shead"><span class="sname">SC-01 通勤早八 · 开包装物</span><span class="prio p-main">主攻</span></div>
+    <div class="rowline"><span class="lb">触发</span>周一早上出门前，地铁通勤装电脑。</div>
+    <div class="rowline"><span class="lb">画面</span>家门口单手拎包轻抛（对比同事单肩包皱眉）；开包逐层装：电脑、平板、水杯、伞、防晒衣，"还有空间"。</div>
+    <div class="rowline"><span class="lb">痛点</span>单肩包压肩、大包太重、找东西翻底朝天。</div>
+    <div class="shoot"><b>拍法：</b>开包第一视角 + 单手轻抛对比。<b>口播：</b><span class="hk">"通勤背电脑的姐妹，这包轻得像没背"</span></div>
+    <span class="verified"><b>已验证</b> "轻得像感觉不到重量"3.9 万赞；双肩包合集 3.8 万赞</span>
+  </div>
+
+  <div class="scard">
+    <div class="shead"><span class="sname">SC-02 开学/图书馆 · 选包攻略</span><span class="prio p-main">主攻</span></div>
+    <div class="rowline"><span class="lb">触发</span>开学季选书包、图书馆泡一天。</div>
+    <div class="rowline"><span class="lb">画面</span>宿舍书桌前学姐式口播：选包 3 点（能装电脑、不勒肩、能出席所有场合）；切图书馆背包装满书和水杯依然挺括。</div>
+    <div class="rowline"><span class="lb">痛点</span>书包丑、重、装不下电脑、背久了塌。</div>
+    <div class="shoot"><b>拍法：</b>选包攻略口播 + 图书馆实拍。<b>口播：</b><span class="hk">"研究生选包攻略：一个包从图书馆背到面试"</span></div>
+    <span class="verified"><b>已验证</b> 研究生选包 2.6k 赞；开学季内容密集</span>
+  </div>
+
+  <div class="scard">
+    <div class="shead"><span class="sname">SC-03 短途差旅 · 一包就走</span><span class="prio p-test">可测试</span></div>
+    <div class="rowline"><span class="lb">触发</span>高铁出差 2-3 天、周末旅行。</div>
+    <div class="rowline"><span class="lb">画面</span>高铁车厢从包里掏出电脑、化妆包、水杯；到站直接背走。</div>
+    <div class="rowline"><span class="lb">痛点</span>行李多、换包麻烦、包重累肩。</div>
+    <div class="shoot"><b>拍法：</b>车厢开包 + 出站对比。<b>口播：</b><span class="hk">"2 天出差一个包搞定，说走就走"</span></div>
+    <span class="verified"><b>已验证</b> Kipling 用户"旅行通勤都封神""一包在手说走就走"</span>
+  </div>
+
+  <div class="scard">
+    <div class="shead"><span class="sname">SC-04 雨天通勤 · 泼水实测</span><span class="prio p-test">可测试</span></div>
+    <div class="rowline"><span class="lb">触发</span>下雨天通勤，包淋湿。</div>
+    <div class="rowline"><span class="lb">画面</span>雨天街边直接往包上泼水，水珠滚落；擦一擦如新，电脑无恙。</div>
+    <div class="rowline"><span class="lb">痛点</span>包淋湿、东西受潮。</div>
+    <div class="shoot"><b>拍法：</b>泼水慢镜 + 擦干特写。<b>口播：</b><span class="hk">"下雨天通勤，这包水泼上去都不怕"</span></div>
+    <span class="verified"><b>已验证</b> 防泼水是 Kipling 用户高频验证点</span>
+  </div>
+
+  <div class="foot">S3 调试产物 · 输入为简版买点/人群 · 内容侧证据检索于 2026-10-28（双肩包通勤/开学/差旅品类）</div>
+</div>
+</body>
+</html>

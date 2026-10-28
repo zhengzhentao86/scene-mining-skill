@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>S3 调试 · 兔力厨房重油污净</title>
+<style>
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#faf8f5;color:#2b2b2b;line-height:1.7;padding:28px 16px 48px;}
+  .wrap{max-width:1000px;margin:0 auto;}
+  .hero{background:linear-gradient(135deg,#2f6b4f 0%,#3f8a64 55%,#56a67e 100%);color:#fff;border-radius:16px;padding:22px 26px;position:relative;overflow:hidden;}
+  .hero::after{content:"";position:absolute;right:-60px;top:-60px;width:240px;height:240px;border-radius:50%;background:rgba(255,255,255,.06);}
+  .hero .brand{font-size:12.5px;letter-spacing:2px;opacity:.85;font-weight:600;}
+  .hero h1{font-size:22px;margin:5px 0 2px;font-weight:700;}
+  .hero .sub{font-size:13px;opacity:.92;}
+  .hero .chips{display:flex;flex-wrap:wrap;gap:7px;margin-top:10px;}
+  .hero .chip{background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.25);border-radius:999px;padding:3px 10px;font-size:12px;}
+  .imgs{display:flex;gap:10px;margin-top:12px;}
+  .imgs img{flex:1;min-width:0;border-radius:9px;max-height:170px;object-fit:cover;}
+  .warn{margin-top:12px;background:#fdf2f2;border:1px solid #eab7b7;border-radius:10px;padding:9px 13px;font-size:12.5px;color:#a33;line-height:1.6;}
+  .warn b{color:#8a1f1f;}
+  .input{margin-top:12px;background:#f4f0ea;border-radius:10px;padding:10px 14px;font-size:12.5px;color:#5a5148;line-height:1.7;}
+  .input b{color:#3d332b;}
+  .sec-title{font-size:16px;font-weight:700;margin:22px 0 10px;color:#3d332b;}
+  .scard{background:#fff;border:1px solid #ece7e0;border-radius:12px;padding:13px 16px;margin-bottom:10px;box-shadow:0 2px 6px rgba(90,70,50,.04);}
+  .shead{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:6px;}
+  .sname{font-size:15px;font-weight:800;color:#3d332b;}
+  .prio{font-size:11.5px;font-weight:800;border-radius:6px;padding:2px 9px;color:#fff;}
+  .p-main{background:#c25e3c;} .p-test{background:#2f6bd6;}
+  .rowline{font-size:12.5px;color:#4a453f;margin:4px 0;line-height:1.6;}
+  .rowline b{color:#3d332b;}
+  .rowline .lb{display:inline-block;min-width:3.6em;color:#8a8178;font-weight:700;font-size:12px;}
+  .shoot{font-size:12.5px;background:#f7f3ec;border-radius:8px;padding:6px 10px;color:#5a5148;margin:5px 0;line-height:1.6;}
+  .shoot .hk{color:#c25e3c;font-weight:700;}
+  .verified{font-size:11.5px;color:#8a8178;background:#f4f7fb;border-radius:6px;padding:2px 8px;display:inline-block;margin-top:3px;}
+  .verified b{color:#1f7a4d;}
+  .foot{font-size:11.5px;color:#a29a90;margin-top:20px;padding-top:10px;border-top:1px solid #e5dfd6;}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="hero">
+    <div class="brand">兔の力 Rabito · 官方旗舰店</div>
+    <h1>厨房重油污净（500g 喷雾）</h1>
+    <div class="sub">S3 挖掘场景 · 独立调试产物 · 品类：家居清洁</div>
+    <div class="chips">
+      <span class="chip">渗透洁净 · 快速去重油</span>
+      <span class="chip">除菌 99.9%*</span>
+      <span class="chip">柠檬清香不刺鼻</span>
+      <span class="chip">灶台 / 水槽 / 油烟机</span>
+      <span class="chip">500g 大容量</span>
+    </div>
+    <div class="imgs">
+      <img src="./tuli-oil1.jpg" alt="兔力油污净产品图1">
+      <img src="./tuli-oil2.jpg" alt="兔力油污净产品图2">
+    </div>
+  </div>
+
+  <div class="warn"><b>品类风险（内容侧核验）：</b>油污净品类存在信任危机——"碳化老油擦不掉"打假测评 1.6k 赞；同时多条实证验证"轻油污效果好、不刺鼻"。策略：先实证再承诺，三段实测是标配形式。</div>
+
+  <div class="input"><b>S3 输入（简版）：</b>主攻人群 = 家庭主厨（常做饭）× 租房退租党；主攻买点 = 渗透去油实测有效 · 清香不刺鼻 · 一瓶管全厨房。以下场景全部来自内容侧先探 + 四问填充。</div>
+
+  <div class="sec-title">场景需求卡 · 主攻 3 / 可测试 1</div>
+
+  <div class="scard">
+    <div class="shead"><span class="sname">SC-01 油烟机灶台 · 三段实测</span><span class="prio p-main">主攻</span></div>
+    <div class="rowline"><span class="lb">触发</span>周末厨房大扫除，看着积油犯愁。</div>
+    <div class="rowline"><span class="lb">画面</span>灶台/油烟机积油特写 → 喷泡沫覆盖 → 静置 5 分钟计时 → 抹布一擦透亮，同机位前后对比。</div>
+    <div class="rowline"><span class="lb">痛点</span>陈年油垢擦不动、刷到手酸。</div>
+    <div class="shoot"><b>拍法：</b>统一条件三段式实测（品类信任战标配形式）。<b>口播：</b><span class="hk">"说能擦掉老油污的油污净，我实测给你看"</span></div>
+    <span class="verified"><b>已验证</b> 品类测评主流形式；打假测评 1.6k 赞反衬实证价值；"泡沫变色分解、透亮露出底色"实测</span>
+  </div>
+
+  <div class="scard">
+    <div class="shead"><span class="sname">SC-02 租房退租 · 押金保卫战</span><span class="prio p-main">主攻</span></div>
+    <div class="rowline"><span class="lb">触发</span>退租前一天，厨房老油要清理干净。</div>
+    <div class="rowline"><span class="lb">画面</span>出租屋厨房（油垢重）→ 喷、等、擦 → 房东视频验收"可以，押金退你"；结尾亮出省下的保洁费。</div>
+    <div class="rowline"><span class="lb">痛点</span>老油被扣押金、请保洁 200 起。</div>
+    <div class="shoot"><b>拍法：</b>退租 Vlog 叙事 + 前后对比。<b>口播：</b><span class="hk">"退租前用它，押金一分不少拿回来"</span></div>
+    <span class="verified"><b>已验证</b> 退租清洁是抖音常青叙事；品类实测可支撑"老油也能擦"</span>
+  </div>
+
+  <div class="scard">
+    <div class="shead"><span class="sname">SC-03 刺鼻对比 · 清香实测</span><span class="prio p-main">主攻</span></div>
+    <div class="rowline"><span class="lb">触发</span>日常清洁担心呛鼻、口罩戴不戴。</div>
+    <div class="rowline"><span class="lb">画面</span>两瓶清洁剂并排喷（一瓶呛鼻捂鼻，一瓶柠檬香），主角不戴口罩完成全厨房清洁。</div>
+    <div class="rowline"><span class="lb">痛点</span>清洁剂呛人、戴了口罩也难受。</div>
+    <div class="shoot"><b>拍法：</b>并排对比 + 无口罩实测。<b>口播：</b><span class="hk">"清洁剂不用捂着鼻子用，柠檬香还去油"</span></div>
+    <span class="verified"><b>已验证</b> "不呛人全程不用戴口罩"用户验证点；刺鼻是品类高频差评</span>
+  </div>
+
+  <div class="scard">
+    <div class="shead"><span class="sname">SC-04 年末大扫除 · 一瓶管全屋</span><span class="prio p-test">可测试</span></div>
+    <div class="rowline"><span class="lb">触发</span>春节前/季度大扫除。</div>
+    <div class="rowline"><span class="lb">画面</span>灶台→水槽→台面→电器快切，一瓶在手逐场景擦亮，结尾全家福。</div>
+    <div class="rowline"><span class="lb">痛点</span>油污点多、买一堆清洁剂。</div>
+    <div class="shoot"><b>拍法：</b>场景快切 + 大容量特写。<b>口播：</b><span class="hk">"年末大扫除，一瓶管整个厨房"</span></div>
+    <span class="verified"><b>已验证</b> 大扫除内容季节性爆发；品类词存在</span>
+  </div>
+
+  <div class="foot">S3 调试产物 · 输入为简版买点/人群 · 内容侧证据检索于 2026-10-28（油污净测评/打假/退租品类）</div>
+</div>
+</body>
+</html>

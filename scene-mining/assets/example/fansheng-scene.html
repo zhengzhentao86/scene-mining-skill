@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>S3 调试 · 能适负离子风扇</title>
+<style>
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#faf8f5;color:#2b2b2b;line-height:1.7;padding:28px 16px 48px;}
+  .wrap{max-width:1000px;margin:0 auto;}
+  .hero{background:linear-gradient(135deg,#1f4a5e 0%,#2f6b84 55%,#4a8aa0 100%);color:#fff;border-radius:16px;padding:22px 26px;position:relative;overflow:hidden;}
+  .hero::after{content:"";position:absolute;right:-60px;top:-60px;width:240px;height:240px;border-radius:50%;background:rgba(255,255,255,.06);}
+  .hero .brand{font-size:12.5px;letter-spacing:2px;opacity:.85;font-weight:600;}
+  .hero h1{font-size:22px;margin:5px 0 2px;font-weight:700;}
+  .hero .sub{font-size:13px;opacity:.92;}
+  .hero .chips{display:flex;flex-wrap:wrap;gap:7px;margin-top:10px;}
+  .hero .chip{background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.25);border-radius:999px;padding:3px 10px;font-size:12px;}
+  .imgs{display:flex;gap:10px;margin-top:12px;}
+  .imgs img{flex:1;min-width:0;border-radius:9px;max-height:170px;object-fit:cover;}
+  .input{margin-top:12px;background:#f4f0ea;border-radius:10px;padding:10px 14px;font-size:12.5px;color:#5a5148;line-height:1.7;}
+  .input b{color:#3d332b;}
+  .sec-title{font-size:16px;font-weight:700;margin:22px 0 10px;color:#3d332b;}
+  .scard{background:#fff;border:1px solid #ece7e0;border-radius:12px;padding:13px 16px;margin-bottom:10px;box-shadow:0 2px 6px rgba(90,70,50,.04);}
+  .shead{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:6px;}
+  .sname{font-size:15px;font-weight:800;color:#3d332b;}
+  .prio{font-size:11.5px;font-weight:800;border-radius:6px;padding:2px 9px;color:#fff;}
+  .p-main{background:#c25e3c;} .p-test{background:#2f6bd6;}
+  .rowline{font-size:12.5px;color:#4a453f;margin:4px 0;line-height:1.6;}
+  .rowline b{color:#3d332b;}
+  .rowline .lb{display:inline-block;min-width:3.6em;color:#8a8178;font-weight:700;font-size:12px;}
+  .shoot{font-size:12.5px;background:#f7f3ec;border-radius:8px;padding:6px 10px;color:#5a5148;margin:5px 0;line-height:1.6;}
+  .shoot .hk{color:#c25e3c;font-weight:700;}
+  .verified{font-size:11.5px;color:#8a8178;background:#f4f7fb;border-radius:6px;padding:2px 8px;display:inline-block;margin-top:3px;}
+  .verified b{color:#1f7a4d;}
+  .foot{font-size:11.5px;color:#a29a90;margin-top:20px;padding-top:10px;border-top:1px solid #e5dfd6;}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="hero">
+    <div class="brand">深圳绿胜 · NShi 能适</div>
+    <h1>负离子智能便携风扇（冷风炮）</h1>
+    <div class="sub">S3 挖掘场景 · 独立调试产物 · 品类：新奇特小家电</div>
+    <div class="chips">
+      <span class="chip">负离子净化 · 久吹不头疼</span>
+      <span class="chip">100 档无极 · 触控调节</span>
+      <span class="chip">飞机涡轮扇叶 · 3D 空气炮风道</span>
+      <span class="chip">可上飞机 · 20h 续航</span>
+      <span class="chip">专享价 ¥123 · 10 万+人加购</span>
+    </div>
+    <div class="imgs">
+      <img src="./fansheng-main.jpg" alt="能适负离子风扇产品图">
+      <img src="./fansheng-detail.jpg" alt="能适负离子风扇详情页">
+    </div>
+  </div>
+
+  <div class="input"><b>S3 输入（简版）：</b>主攻人群 = 办公室久坐党 × 宿舍/自习党 × 怕热怕闷人群；主攻买点 = 负离子净化久吹不头疼 · 100 档柔风/强风 · 涡轮风量结构（对比普通风扇"吹了=白吹"）。以下场景全部来自内容侧先探 + 四问填充。</div>
+
+  <div class="sec-title">场景需求卡 · 主攻 3 / 可测试 1</div>
+
+  <div class="scard">
+    <div class="shead"><span class="sname">SC-01 办公室久吹 · 不头疼</span><span class="prio p-main">主攻</span></div>
+    <div class="rowline"><span class="lb">触发</span>办公室闷热、空调久吹难受、同事烟味/异味。</div>
+    <div class="rowline"><span class="lb">画面</span>工位实拍：普通风扇吹着头痛揉太阳穴 → 换能适风扇，负离子净化空气、柔风不直吹；"男同事身上烟味"等空气问题被点名解决。</div>
+    <div class="rowline"><span class="lb">痛点</span>热风越吹越热、久吹头痛、办公室空气差（详情页三大痛点直接对应）。</div>
+    <div class="shoot"><b>拍法：</b>工位前后对比 + 风感实测。<b>口播：</b><span class="hk">"谁懂？这个久吹不头疼的负离子风扇"</span></div>
+    <span class="verified"><b>已验证</b> "久吹不头疼"内容 5.1k 赞；"能净化空气的桌面风扇、解决办公室空气危机"2.4 万赞（官方同款内容）</span>
+  </div>
+
+  <div class="scard">
+    <div class="shead"><span class="sname">SC-02 午休 · 被冷醒</span><span class="prio p-main">主攻</span></div>
+    <div class="rowline"><span class="lb">触发</span>办公室/宿舍午休，风扇噪音大或风太热。</div>
+    <div class="rowline"><span class="lb">画面</span>午休趴桌，风扇静音运转 + 悬浮降噪扇叶特写；"吹着它午休被冷醒了"（内容原话）——风够凉、还安静。</div>
+    <div class="rowline"><span class="lb">痛点</span>风扇吵、午休被热醒、开最大档噪音大。</div>
+    <div class="shoot"><b>拍法：</b>午休场景 + 噪音对比（分贝数值）。<b>口播：</b><span class="hk">"午休能被冷醒的风扇，静音还凉快"</span></div>
+    <span class="verified"><b>已验证</b> "午休被冷醒"9.4k 赞；"开到最大也不会打扰休息"内容</span>
+  </div>
+
+  <div class="scard">
+    <div class="shead"><span class="sname">SC-03 桌面摆件 · 质感出圈</span><span class="prio p-main">主攻</span></div>
+    <div class="rowline"><span class="lb">触发</span>桌面空位、想给工位/书桌添个好看又实用的物件。</div>
+    <div class="rowline"><span class="lb">画面</span>触控面板滑动调风特写（"丝滑"手势）→ 桌面视角：颜值摆件属性 + 百档调节演示。</div>
+    <div class="rowline"><span class="lb">痛点</span>普通风扇丑、塑料感。</div>
+    <div class="shoot"><b>拍法：</b>触控手势特写 + 桌面场景。<b>口播：</b><span class="hk">"这风扇怕不是苹果新出的…"</span></div>
+    <span class="verified"><b>已验证</b> "丝滑触控面板、自带摆件属性、怕不是苹果新出的"5.1k/9.4k 赞内容</span>
+  </div>
+
+  <div class="scard">
+    <div class="shead"><span class="sname">SC-04 差旅随身 · 可上飞机</span><span class="prio p-test">可测试</span></div>
+    <div class="rowline"><span class="lb">触发</span>出差/旅行酒店闷热、高铁办公。</div>
+    <div class="rowline"><span class="lb">画面</span>酒店/高铁场景掏出便携风扇，20h 续航一整天；登机安检镜头"可上飞机"。</div>
+    <div class="rowline"><span class="lb">痛点</span>酒店空调不凉、随身风扇续航短。</div>
+    <div class="shoot"><b>拍法：</b>差旅场景 + 续航/安检特写。<b>口播：</b><span class="hk">"能带上飞机的风扇，差旅降温全靠它"</span></div>
+    <span class="verified"><b>已验证</b> "充电款 20h 续航从早吹到晚"内容；便携属性被多条内容验证</span>
+  </div>
+
+  <div class="foot">S3 调试产物 · 输入为简版买点/人群 · 内容侧证据检索于 2026-10-28（负离子桌面风扇/办公室/午休品类）</div>
+</div>
+</body>
+</html>

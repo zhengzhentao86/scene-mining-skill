@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>场景需求卡 · {商品名}</title>
+<style>
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#faf8f5;color:#2b2b2b;line-height:1.7;padding:28px 16px 48px;}
+  .wrap{max-width:1000px;margin:0 auto;}
+  .hero{background:linear-gradient(135deg,#3d332b 0%,#5b4c3f 55%,#7a6a58 100%);color:#fff;border-radius:16px;padding:22px 26px;position:relative;overflow:hidden;}
+  .hero::after{content:"";position:absolute;right:-60px;top:-60px;width:240px;height:240px;border-radius:50%;background:rgba(255,255,255,.06);}
+  .hero .brand{font-size:12.5px;letter-spacing:2px;opacity:.85;font-weight:600;}
+  .hero h1{font-size:22px;margin:5px 0 2px;font-weight:700;}
+  .hero .sub{font-size:13px;opacity:.92;}
+  .hero .chips{display:flex;flex-wrap:wrap;gap:7px;margin-top:10px;}
+  .hero .chip{background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.25);border-radius:999px;padding:3px 10px;font-size:12px;}
+  .input{margin-top:12px;background:#f4f0ea;border-radius:10px;padding:10px 14px;font-size:12.5px;color:#5a5148;line-height:1.7;}
+  .input b{color:#3d332b;}
+  .sec-title{font-size:16px;font-weight:700;margin:22px 0 10px;color:#3d332b;}
+  .scard{background:#fff;border:1px solid #ece7e0;border-radius:12px;padding:13px 16px;margin-bottom:10px;box-shadow:0 2px 6px rgba(90,70,50,.04);}
+  .shead{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:6px;}
+  .sname{font-size:15px;font-weight:800;color:#3d332b;}
+  .prio{font-size:11.5px;font-weight:800;border-radius:6px;padding:2px 9px;color:#fff;}
+  .p-main{background:#c25e3c;} .p-test{background:#2f6bd6;} .p-pend{background:#9a9a9a;}
+  .rowline{font-size:12.5px;color:#4a453f;margin:4px 0;line-height:1.6;}
+  .rowline b{color:#3d332b;}
+  .rowline .lb{display:inline-block;min-width:3.6em;color:#8a8178;font-weight:700;font-size:12px;}
+  .shoot{font-size:12.5px;background:#f7f3ec;border-radius:8px;padding:6px 10px;color:#5a5148;margin:5px 0;line-height:1.6;}
+  .shoot .hk{color:#c25e3c;font-weight:700;}
+  .verified{font-size:11.5px;color:#8a8178;background:#f4f7fb;border-radius:6px;padding:2px 8px;display:inline-block;margin-top:3px;}
+  .verified b{color:#1f7a4d;}
+  .foot{font-size:11.5px;color:#a29a90;margin-top:20px;padding-top:10px;border-top:1px solid #e5dfd6;}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="hero">
+    <div class="brand">{品牌 · 店铺}</div>
+    <h1>{商品名}</h1>
+    <div class="sub">S3 挖掘场景 · {品类}</div>
+    <div class="chips"><span class="chip">{核心卖点 1}</span><span class="chip">{核心卖点 2}</span></div>
+  </div>
+
+  <div class="input"><b>S3 输入：</b>{主攻人群} × {主攻买点}。以下场景来自内容侧先探 + 四问填充。</div>
+
+  <div class="sec-title">场景需求卡 · 主攻 {N} / 可测试 {M}</div>
+
+  <div class="scard">
+    <div class="shead"><span class="sname">SC-01 {场景名}</span><span class="prio p-main">主攻</span></div>
+    <div class="rowline"><span class="lb">触发</span>{具体时间/地点/事件}</div>
+    <div class="rowline"><span class="lb">画面</span>{人物/环境/动作/冲突，能开机就拍}</div>
+    <div class="rowline"><span class="lb">痛点</span>{有画面感的麻烦}</div>
+    <div class="shoot"><b>拍法：</b>{镜头 + 第一视角}<b>口播：</b><span class="hk">"{一句话钩子}"</span></div>
+    <span class="verified"><b>✓ 已验证</b> {内容侧证据：标题 + 互动量}</span>
+  </div>
+
+  <!-- 更多场景卡：SC-02 ...（可测试用 p-test，待确认用 p-pend） -->
+
+  <div class="foot">资料来源：{商品图/文档} + 抖音同品类内容检索（{日期}）· 由 scene-mining Skill 生成</div>
+</div>
+</body>
+</html>

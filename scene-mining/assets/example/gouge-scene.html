@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>S3 调试 · 狗哥鲸鱼垫鞋垫</title>
+<style>
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#faf8f5;color:#2b2b2b;line-height:1.7;padding:28px 16px 48px;}
+  .wrap{max-width:1000px;margin:0 auto;}
+  .hero{background:linear-gradient(135deg,#2f7a5c 0%,#3f9a74 55%,#56b58c 100%);color:#fff;border-radius:16px;padding:22px 26px;position:relative;overflow:hidden;}
+  .hero::after{content:"";position:absolute;right:-60px;top:-60px;width:240px;height:240px;border-radius:50%;background:rgba(255,255,255,.06);}
+  .hero .brand{font-size:12.5px;letter-spacing:2px;opacity:.85;font-weight:600;}
+  .hero h1{font-size:22px;margin:5px 0 2px;font-weight:700;}
+  .hero .sub{font-size:13px;opacity:.92;}
+  .hero .chips{display:flex;flex-wrap:wrap;gap:7px;margin-top:10px;}
+  .hero .chip{background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.25);border-radius:999px;padding:3px 10px;font-size:12px;}
+  .imgs{display:flex;gap:10px;margin-top:12px;}
+  .imgs img{flex:1;min-width:0;border-radius:9px;max-height:170px;object-fit:cover;}
+  .warn{margin-top:12px;background:#fdf2f2;border:1px solid #eab7b7;border-radius:10px;padding:9px 13px;font-size:12.5px;color:#a33;line-height:1.6;}
+  .warn b{color:#8a1f1f;}
+  .input{margin-top:12px;background:#f4f0ea;border-radius:10px;padding:10px 14px;font-size:12.5px;color:#5a5148;line-height:1.7;}
+  .input b{color:#3d332b;}
+  .sec-title{font-size:16px;font-weight:700;margin:22px 0 10px;color:#3d332b;}
+  .scard{background:#fff;border:1px solid #ece7e0;border-radius:12px;padding:13px 16px;margin-bottom:10px;box-shadow:0 2px 6px rgba(90,70,50,.04);}
+  .shead{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:6px;}
+  .sname{font-size:15px;font-weight:800;color:#3d332b;}
+  .prio{font-size:11.5px;font-weight:800;border-radius:6px;padding:2px 9px;color:#fff;}
+  .p-main{background:#c25e3c;} .p-test{background:#2f6bd6;}
+  .rowline{font-size:12.5px;color:#4a453f;margin:4px 0;line-height:1.6;}
+  .rowline b{color:#3d332b;}
+  .rowline .lb{display:inline-block;min-width:3.6em;color:#8a8178;font-weight:700;font-size:12px;}
+  .shoot{font-size:12.5px;background:#f7f3ec;border-radius:8px;padding:6px 10px;color:#5a5148;margin:5px 0;line-height:1.6;}
+  .shoot .hk{color:#c25e3c;font-weight:700;}
+  .verified{font-size:11.5px;color:#8a8178;background:#f4f7fb;border-radius:6px;padding:2px 8px;display:inline-block;margin-top:3px;}
+  .verified b{color:#1f7a4d;}
+  .foot{font-size:11.5px;color:#a29a90;margin-top:20px;padding-top:10px;border-top:1px solid #e5dfd6;}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="hero">
+    <div class="brand">GOUGE 狗哥官方旗舰店</div>
+    <h1>鲸鱼垫 TPU 足弓支撑鞋垫</h1>
+    <div class="sub">S3 挖掘场景 · 独立调试产物 · 品类：健康鞋垫</div>
+    <div class="chips">
+      <span class="chip">TPU 足弓支撑</span>
+      <span class="chip">PORON 减震回弹</span>
+      <span class="chip">吸汗透气 · 高约3.5cm</span>
+      <span class="chip">已售 80 万+ · 鞋垫爆款榜第 1</span>
+      <span class="chip">券后 53 元起</span>
+    </div>
+    <div class="imgs">
+      <img src="./gouge-main.jpg" alt="狗哥鲸鱼垫产品图">
+      <img src="./gouge-detail.jpg" alt="狗哥鲸鱼垫详情页">
+    </div>
+  </div>
+
+  <div class="warn"><b>品类风险（内容侧核验）：</b>鞋垫品类有"智商税"质疑（"以前一直觉得足弓垫是智商税"），且内容明确提示"可缓解疲劳、没有治疗效果"。策略上必须：先证人群刚需（久站/通勤），再讲体感，<b>不碰疗效承诺</b>。</div>
+
+  <div class="input"><b>S3 输入（简版）：</b>主攻人群 = 久站职业党（护士/教师/站班）× 通勤走路党；主攻买点 = 足弓支撑久站不累 · 回弹缓震踩屎感 · 爆款信任。以下场景全部来自内容侧先探 + 四问填充。</div>
+
+  <div class="sec-title">场景需求卡 · 主攻 3 / 可测试 1</div>
+
+  <div class="scard">
+    <div class="shead"><span class="sname">SC-01 站一天实测 · 脚不痛</span><span class="prio p-main">主攻</span></div>
+    <div class="rowline"><span class="lb">触发</span>护士/教师/站班人群下班的脚，站 8 小时以上。</div>
+    <div class="rowline"><span class="lb">画面</span>护士站/讲台实拍：下班脱鞋的脚 + 换上鲸鱼垫的日常对比；"真的有人站一天脚都不痛吗？"（狗哥自家内容原话）→ 塞进鞋垫展示足弓被撑起。</div>
+    <div class="rowline"><span class="lb">痛点</span>站一天脚底板痛、后跟发胀、下班腿酸。</div>
+    <div class="shoot"><b>拍法：</b>职业场景实拍 + 换垫前后体感对比。<b>口播：</b><span class="hk">"护士教师久站，选对鞋垫比选对鞋更重要"</span></div>
+    <span class="verified"><b>已验证</b> 护士教师久站选垫内容 2.3k 赞；狗哥自家"站一天脚不痛"内容；"站班选对鞋垫比鞋子更重要"</span>
+  </div>
+
+  <div class="scard">
+    <div class="shead"><span class="sname">SC-02 通勤日常 · 换进每双鞋</span><span class="prio p-main">主攻</span></div>
+    <div class="rowline"><span class="lb">触发</span>日常通勤/逛街走路多，普通鞋底太薄。</div>
+    <div class="rowline"><span class="lb">画面</span>把鲸鱼垫塞进日常穿的板鞋/马丁靴，按压回弹特写；走路姿态对比（足弓撑起后步态更稳）。</div>
+    <div class="rowline"><span class="lb">痛点</span>鞋底硬走久了累、足弓塌走路姿势不对。</div>
+    <div class="shoot"><b>拍法：</b>塞垫过程 + 按压回弹 + 步态对比。<b>口播：</b><span class="hk">"每双鞋都能用的鞋垫，走路真没以前累了"</span></div>
+    <span class="verified"><b>已验证</b> 用户原话"坚持穿 2 个月，足弓被撑起来、走路姿势更规范、腿变直"</span>
+  </div>
+
+  <div class="scard">
+    <div class="shead"><span class="sname">SC-03 踩屎感测评 · 久站不累</span><span class="prio p-main">主攻</span></div>
+    <div class="rowline"><span class="lb">触发</span>刷到"踩屎感"鞋垫测评想验证真假。</div>
+    <div class="rowline"><span class="lb">画面</span>按压回弹慢镜 + 穿劳保鞋/运动鞋久站一天后的体感反馈，一年使用回顾。</div>
+    <div class="rowline"><span class="lb">痛点</span>怕踩雷、软垫用两天就踩扁。</div>
+    <div class="shoot"><b>拍法：</b>测评式实拍（按压/回弹/久站）。<b>口播：</b><span class="hk">"踩屎感鞋垫我用了一年，真实反馈"</span></div>
+    <span class="verified"><b>已验证</b> 踩屎感久站鞋垫一年真实评价 76 赞；普通鞋垫"2 小时踩扁"对比内容</span>
+  </div>
+
+  <div class="scard">
+    <div class="shead"><span class="sname">SC-04 扁平足自救 · 科普体验</span><span class="prio p-test">可测试</span></div>
+    <div class="rowline"><span class="lb">触发</span>扁平足/足弓塌陷人群久走膝盖疼。</div>
+    <div class="rowline"><span class="lb">画面</span>扁平足脚型特写 → 科普"受力重新分配"（前掌+后跟+足弓三点分担）→ 上垫体验。</div>
+    <div class="rowline"><span class="lb">痛点</span>扁平足走路累、膝盖不适。</div>
+    <div class="shoot"><b>拍法：</b>科普口播 + 体验反馈。<b>口播：</b><span class="hk">"扁平足走路累？问题可能出在鞋垫"</span></div>
+    <span class="verified"><b>已验证</b> 久站足弓支撑科普内容；"膝盖疼脚底板疼"体验内容（注意标注"缓解疲劳非治疗"）</span>
+  </div>
+
+  <div class="foot">S3 调试产物 · 输入为简版买点/人群 · 内容侧证据检索于 2026-10-28（久站鞋垫/足弓支撑/踩屎感品类）</div>
+</div>
+</body>
+</html>
