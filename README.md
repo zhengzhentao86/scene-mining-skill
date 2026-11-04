@@ -1,5 +1,11 @@
 # 抖音「挖掘场景」Skill · 学员使用说明
 
+> 抖音电商认证讲师 郑镇涛 免费开源
+>
+> AI 学习，skill 使用问题咨询镇涛老师助理：7838053（微信）
+>
+> AI 电商知识库：https://bvvp9yto7k.feishu.cn/wiki/ZIbrwShfkirvVok3hIHcUz5nnTc
+
 > 你是做抖音电商内容的。这个 Skill 帮你解决另一个最头疼的问题：
 > **这条视频，到底该拍什么画面？**
 
